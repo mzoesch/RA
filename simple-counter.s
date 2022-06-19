@@ -1,9 +1,9 @@
 .data
-sMsg:   .asciiz "\nAktueller Wert:\t: "	# Für Ergebnisanzeige
-
+sMsg:   .asciiz "\nAktueller Wert:\t: "	# Fï¿½r Ergebnisanzeige
+str2:	.asciiz "Zweiter String"
 .text
 main:	li 	$t0, 	10		# Kommentar 1 Nr.:
-
+	
 while:	blez	$t0,	elihw		# Kommentar 2 Nr.:
 	addi	$t0,	$t0,	-1	# Kommentar 3 Nr.:
 	addi	$sp,	$sp,	-4	# Kommentar 4 Nr.:
@@ -24,4 +24,4 @@ print:
 	move	$a0,	$t0		# Kommentar 10 	Nr.:
 	li 	$v0,	1 		# print_int
 	syscall
-	jr $ra				# Rücksprung
+	jr $ra				# Rï¿½cksprung
